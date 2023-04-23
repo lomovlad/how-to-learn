@@ -1,3 +1,12 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -20,6 +29,7 @@
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 .logo {
@@ -72,6 +82,7 @@
   width: 765px;
   height: 608px;
   z-index: 1;
+  overflow: hidden;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -85,6 +96,14 @@
   background-color: #2f80ed;
 }
 
+.opacity:hover {
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in;
+}
+
+.rotation {
+  animation: rotation 20s linear infinite;
+}
 /* Header end */
 
 /* Description start */
@@ -137,6 +156,86 @@
 }
 
 /* Description end */
+
+/* Techniques start */
+.techniques {
+  box-sizing: border-box;
+  width: 80%;
+  padding: 100px 0 0;
+  margin: 0 auto;
+}
+
+.cards {
+  box-sizing: border-box;
+  width: 920px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 100px;
+}
+
+.cards__item {
+  box-sizing: border-box;
+  padding: 60px 0 0;
+  width: 240px;
+  list-style: none;
+  text-align: center;
+}
+
+.cards__image {
+  box-sizing: border-box;
+  width: 160px;
+  height: 160px;
+  margin: 0 40px 43px;
+  border-radius: 50%;
+}
+
+.cards__title {
+  box-sizing: border-box;
+  margin: 0 0 16px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.cards__description {
+  box-sizing: border-box;
+  margin: 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* Techniques end */
+
+/* Video start */
+.video {
+  box-sizing: border-box;
+  padding: 100px 0 0;
+}
+
+.video__iframes {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  transform: translateY(50px);
+}
+
+.video__iframe {
+  border: 0;
+}
+/* Video end */
+
+/* Oakley start */
+.oakley {
+  box-sizing: border-box;
+  padding: 160px 0 0;
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+/* Oakley end */
 
 /* Digits start */
 
@@ -200,6 +299,81 @@
 }
 
 /* Digits end */
+
+/* Khan start */
+.khan {
+  box-sizing: border-box;
+  padding: 105px 0 0;
+  background-color: #f2f2f2;
+}
+
+.khan__container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.khan__author {
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.khan__title {
+  margin: 0 0 50px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.khan__quote {
+  box-sizing: border-box;
+  margin: 0 0 36px;
+  width: 790px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.khan__quote-author {
+  box-sizing: border-box;
+  margin: 0 0 10px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.khan__quote-author-subline {
+  box-sizing: border-box;
+  margin: 0 0 68px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.khan__book-container {
+  display: flex;
+  column-gap: 48px;
+}
+
+.khan__book-pic {
+  box-sizing: border-box;
+  width: 620px;
+  height: 608px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.khan__buy-link {
+  box-sizing: border-box;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #2f80ed;
+}
+/* Khan end */
 
 /* Feynman start */
 
@@ -295,6 +469,35 @@
 }
 
 /* Kaufman end */
+
+/* Resources start */
+.resources {
+  box-sizing: border-box;
+  padding: 100px 0 217px;
+}
+
+.resources__logo-zone {
+  box-sizing: border-box;
+  width: 1100px;
+  height: 38px;
+  margin: 80px auto 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.resources__link {
+  box-sizing: border-box;
+}
+
+.resources__logo {
+  box-sizing: border-box;
+  width: 270px;
+  height: 38px;
+}
+/* Resources end */
+
 
 /* Footer */
 

@@ -1,0 +1,7 @@
+.video__iframes {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  transform: translateY(50px);
+}
