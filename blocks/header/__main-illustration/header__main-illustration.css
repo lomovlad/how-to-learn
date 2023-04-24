@@ -7,5 +7,5 @@
   width: 765px;
   height: 608px;
   z-index: 1;
-  overflow: hidden;
+  object-fit: cover;
 }
